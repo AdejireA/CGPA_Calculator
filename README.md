@@ -94,6 +94,20 @@ Level: 100
 GPA: 3.77778
 ```
 
+## Error Handling
+
+- If an invalid grade is entered, the program will display an error message and terminate.
+  
+  Example:
+```sh
+  Enter your name: John Doe
+  Enter your year: 1
+  Enter the number of courses you took: 2
+  Enter the grade for course 1 (A, B, C, D, E, F): Z
+  Enter the course unit for course 1: 3
+  Invalid grade entered. Please restart the program and try again.
+```
+
 ## Contributing
 
 1. Fork the repository.
