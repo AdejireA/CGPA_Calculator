@@ -4,26 +4,49 @@
 
 using namespace std;
 
-int main(){
-    string Name;
-    int newvalue;
-    int CourseNumber;
-    int CourseGrade;
+double GPACalculation(double TLU, double TCP){
+    double GPACalculated;
+    GPACalculated = TCP/TLU;
+    return (GPACalculated);
+}
 
-    cout << "GPA CALCULATOR \n \n";   
+
+int main()
+{
+    string Name;
+    int level;
+    // string CourseGrade;
+
+    cout << "GPA CALCULATOR  \n";
     cout << "Enter your name: ";
-    getline (cin, Name);
+    getline(cin, Name);
     cout << "Welcome " << Name << "\n";
 
     cout << "Please enter your level: ";
-    cin >> newvalue; 
-    cout << "You are a " << newvalue <<" student" << "\n";
+    cin >> level;
+    
+    int Numberofcourses;
+    cout << "Enter the number of courses you took: ";
+    cin >> Numberofcourses;
 
-    cout << "How many Courses did you take: ";
-    cin >> CourseNumber;
+    int TLU;
+    int TCP;
 
-    cout << "Enter your Course Grades";
-    cin >> CourseGrade;
+    for (int i = 0; i < Numberofcourses; i++){
+        char Grade;
+        int Courseunit;
+        cout << "Enter the grade for course " << (i + 1) << "(A, B, C, D, E, F): ";
+        cin >> Grade;
+        cout << "Enter the number of units for the course " << (i + 1) << ": ";
+        cin >> Courseunit;
+
+    }
+    
+
+    cout << "Student Name: " << Name << "\n ";
+    cout << "Level: " << level << "\n";
+    cout << "Level: " << level << "\n";
+  //  cout << "Your GPA is: " << GPA << "\n";
 
 
     return (0);

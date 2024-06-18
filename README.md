@@ -2,11 +2,11 @@
 
 ## Description
 
-This is a simple C++ program that calculates the Grade Point Average (GPA) for a student based on their grades and course units. The user inputs their name, year, the number of courses they have taken for the semester, and for each course, the grade and course unit. The program then calculates and displays the GPA.
+This is a simple C++ program that calculates the Grade Point Average (GPA) for a student based on their grades and course units. The user inputs their name, level, the number of courses they have taken for the semester, and for each course, the grade and course unit. The program then calculates and displays the GPA.
 
 ## Features
 
-- User input for student name and year.
+- User input for student name and level.
 - User input for the number of courses taken.
 - For each course, user inputs the grade and course unit.
 - Grades are converted to points based on a predefined scale.
@@ -60,13 +60,13 @@ This is a simple C++ program that calculates the Grade Point Average (GPA) for a
    ./cgpa_calculator
    ```
 
-2. **Enter your name and year:**
+2. **Enter your name and level:**
 
-   The program will prompt you to enter your name and year.
+   The program will prompt you to enter your name and level.
 
 3. **Enter the number of courses:**
 
-   The program will prompt you to enter the number of courses you want to include in the CGPA calculation.
+   The program will prompt you to enter the number of courses you want to include in the GPA calculation.
 
 4. **Enter the grades and course units:**
 
@@ -74,8 +74,25 @@ This is a simple C++ program that calculates the Grade Point Average (GPA) for a
 
 5. **View the calculated GPA:**
 
-   After entering all the courses, the program will display the calculated GPA along with your name and year.
+   After entering all the courses, the program will display the calculated GPA along with your name and level.
 
+### Example
+
+```sh
+Enter your name: Daniel McHenry
+Enter your level: 100
+Enter the number of courses you took: 3
+Enter the grade for course 1 (A, B, C, D, E, F): A
+Enter the course unit for course 1: 3
+Enter the grade for course 2 (A, B, C, D, E, F): B
+Enter the course unit for course 2: 4
+Enter the grade for course 3 (A, B, C, D, E, F): C
+Enter the course unit for course 3: 2
+
+Student Name: Daniel McHenry
+Level: 100
+GPA: 3.77778
+```
 
 ## Contributing
 
